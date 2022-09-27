@@ -1,0 +1,31 @@
+@import url(style.css);
+
+/* for nav bar */
+nav {
+    /* get three items aligned evently */
+    display: flex;
+    justify-content: space-around;
+    /* make horizontaly aligned center */
+    align-items: center;
+}
+
+/* for iframe border radius */
+iframe {
+    /* makes the box more bigger (i think)*/
+    padding: 0;
+    margin: 0;
+    /* to remove margin from bottom of box*/
+    display: block;
+    /* the logic (not supported everywhere yet) "Property is experimental." */
+    aspect-ratio: 16/9;
+    width: 100%;
+}
+
+#m-body.dis-body {
+    font-family: var(--edu), Arial, Helvetica, sans-serif;
+    font-size: calc(.95em + 1vw);
+    background-color: #00000023;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

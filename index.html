@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The ODD</title>
+    <!-- links to main style sheet -->
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body id="main-body">
+    <!-- nav -->
+    <nav>
+        <!-- Link to index.html with an image -->
+        <span><a href="index.html"><img width="35px" src="images/fav.png" alt="Home"></a></span>
+        <!-- link to open muisc list | with custom target property -->
+        <span><a href="music-list.html" class="nav-link" target="_MFRAME">Open</a></span>
+        <span><a href="about.html" class="nav-link" target="_MFRAME">About</a></span>
+        <span><a href="disclaimer.html" class="nav-link" target="_MFRAME">Disclaimer</a></span>
+    </nav>
+    <!-- main content -->
+    <section>
+        <!-- iframe for playing videos -->
+        <iframe name="_MFRAME" src="disclaimer.html" title="video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>
+</body>
+
+</html>

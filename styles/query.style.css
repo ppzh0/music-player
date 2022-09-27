@@ -1,0 +1,31 @@
+@media screen and (max-width: 600px) {
+    table {
+        border: 0;
+    }
+
+    table tr {
+        display: block;
+        margin-bottom: .5em;
+    }
+
+    table td {
+        display: block;
+    }
+
+    th {
+        display: block;
+        background-color: #e0e0e0e3;
+    }
+
+    tr:nth-child(odd) {
+        background-color: #7c7c7c;
+    }
+
+}
+
+@media screen and (min-width: 800px) {
+    iframe {
+        width: 70% !important;
+        margin: 0 auto !important;
+    }
+}

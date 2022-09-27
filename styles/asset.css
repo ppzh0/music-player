@@ -1,0 +1,22 @@
+/* code selection decleartion */
+code::selection {
+    background-color: #FFF066;
+    color: #000;
+}
+
+
+/* for inline code */
+code:not(pre code) {
+    background-color: var(--cc);
+    border-radius: 3px;
+    font-family: Courier, monospace;
+    padding: 0 3px;
+}
+
+/* for code block */
+pre > code {
+    background-color: var(--cc);
+    border: 1px solid #999;
+    display: block;
+    padding: 20px;
+}

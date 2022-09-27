@@ -1,0 +1,68 @@
+@import url(layout.css);
+
+@import url(design.css);
+
+@import url(font.css);
+
+@import url(query.style.css);
+
+@import url(asset.css);
+
+:root {
+    /* c is denfined as color */
+    --cD: #000;
+    --d25: #00000025;
+    --d50: #00000050;
+    --d75: #00000075;
+    --cW: #fff;
+    --cc: #eee;
+    --w50: #ffffff50;
+    --cyan: cyan;
+    --cY: #ff0;
+    --y50: #ffff0050;
+    --y75: #ffff0075;
+    --px1: 5px;
+    --px2: 10px;
+    /* body default bg colors */
+    --c-body: #e5e5e5;
+    /* link default colors */
+    --L-V: #c58af9;
+    --L-H-D: var(--d75);
+    --L-N-D: #8ab4f8;
+    /* fonts */
+    --edu: EduVIC;
+    --cNe: ComicNeue;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body:not(#m-body) {
+    line-height: 140%;
+    display: grid;
+    font-family: var(--cNe), Arial, Helvetica, sans-serif;
+    background-color: var(--c-body);
+    font-size: calc(.75em + 1vw);
+    margin: 1px;
+}
+
+section>iframe {
+    /* make the iframe visable to mobile users */
+    border-radius: var(--px1);
+    border: 1px solid var(--d75);
+}
+
+.a-blank {
+    font-family: monospace !important;
+    background-color: var(--y75);
+    color: var(--d75) !important;
+    padding: 2px;
+    border-radius: var(--px1);
+}
+
+.a-blank:visited {
+    background-color: var(--L-V);
+}
