@@ -11,14 +11,14 @@
 :root {
     /* c is denfined as color */
     --cD: #000;
+    --cc: #eee;
+    --cW: #fff;
+    --cY: #ff0;
     --d25: #00000025;
     --d50: #00000050;
     --d75: #00000075;
-    --cW: #fff;
-    --cc: #eee;
     --w50: #ffffff50;
     --cyan: cyan;
-    --cY: #ff0;
     --y50: #ffff0050;
     --y75: #ffff0075;
     --px1: 5px;
@@ -31,7 +31,7 @@
     --L-N-D: #8ab4f8;
     /* fonts */
     --edu: EduVIC;
-    --cNe: ComicNeue;
+    --fop: ComicNeue;
 }
 
 *,
@@ -43,7 +43,7 @@
 body:not(#m-body) {
     line-height: 140%;
     display: grid;
-    font-family: var(--cNe), Arial, Helvetica, sans-serif;
+    font-family: var(--fop), Arial, Helvetica, sans-serif;
     background-color: var(--c-body);
     font-size: calc(.75em + 1vw);
     margin: 1px;
@@ -55,7 +55,7 @@ section>iframe {
     border: 1px solid var(--d75);
 }
 
-.a-blank {
+.a-hlighted {
     font-family: monospace !important;
     background-color: var(--y75);
     color: var(--d75) !important;
@@ -63,6 +63,6 @@ section>iframe {
     border-radius: var(--px1);
 }
 
-.a-blank:visited {
+.a-hlighted:visited {
     background-color: var(--L-V);
 }
